@@ -5,16 +5,28 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2 {
+    font-family: "Sharp Grotesk DB Cyr Medium 22", sans-serif;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
   a {
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
+    color: var(--color-white);
   }
   ul {
     list-style: none
   }
-  *, button, input {
+  *, button, input, li {
     font-family: Roboto, sans-serif;
   }
   :root {
